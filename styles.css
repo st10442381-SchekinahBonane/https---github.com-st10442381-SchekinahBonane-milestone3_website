@@ -273,84 +273,84 @@ body {
 }
 
 .logo{
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    border-radius: 50%; /* Make the logo circular */
-    object-fit: cover; /* Ensure the image fits within the circle */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
 .header-title {
-    font-size: 24px; /* Change font size */
-    font-weight: bold; /* Make the title bold */
-    margin-top: 10px; /* Space between logo and title */
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-top: 10px;
 }
 
 .dropdown {
-    text-align: left; /* Center the dropdown */
-    margin: 20px 0; /* Space above and below the dropdown */
+    text-align: left; 
+    margin: 20px 0; 
 }
 
 .dropbtn {
-    padding: 10px 20px; /* Make the button bigger */
-    font-size: 16px; /* Increase font size for visibility */
-    background-color: #4CAF50; /* Button background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px 20px; 
+    font-size: 16px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
 }
 
 .dropdown-content {
-    display: none; /* Hide dropdown content by default */
-    position: absolute; /* Position it relative to the dropdown */
-    background-color: #ffffff; /* Background for the dropdown */
-    min-width: 200px; /* Minimum width for dropdown */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
-    z-index: 1; /* Place it on top */
+    display: none; 
+    position: absolute; 
+    background-color: #ffffff; 
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block; 
 }
 
 .dropdown-content a {
-    color: black; /* Text color in dropdown */
-    padding: 12px 16px; /* Padding for links */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Make links stack vertically */
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1; /* Highlight on hover */
+    background-color: #f1f1f1; 
 }
 
 #courses {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack boxes vertically */
-    align-items: center; /* Center the boxes */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 #box {
-    background-color: #ffffff; /* Background for course boxes */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Padding inside boxes */
-    margin: 10px 0; /* Space between boxes */
-    width: 100%; /* Make boxes full width */
-    max-width: auto; /* Max width for boxes */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for boxes */
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 10px 0; 
+    width: 100%; 
+    max-width: auto; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .container {
-    max-width: auto; /* Set a larger width */
-    max-height: auto; /* Set a larger height */
-    margin: 20px auto; /* Center the box horizontally */
+    max-width: auto; 
+    max-height: auto; 
+    margin: 20px auto; 
     background-color: rgb(167, 193, 216);
     border-radius: 35px;
-    display: flex; /* Optional: enables flexbox for centering content */
-    flex-direction: column; /* Optional: stack children vertically */
-    align-items: center; /* Optional: center children horizontally */
-    justify-content: center; /* Optional: center children vertically */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 #box2 {
@@ -359,11 +359,11 @@ body {
     background-color: rgb(167, 193, 216);
     margin: 20px;
     border-radius: 35px;
-    display: flex; /* Optional: enables flexbox for centering content */
-    flex-direction: column; /* Optional: stack children vertically */
-    align-items: center; /* Optional: center children horizontally */
-    justify-content: center; /* Optional: center children vertically */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 .images2 {
     width: 200;
@@ -382,43 +382,43 @@ body {
 }
 
 h1 {
-    font-size: 28px; /* Heading size */
-    text-align: center; /* Center the heading */
-    margin-bottom: 20px; /* Space below heading */
+    font-size: 28px; 
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 h2 {
-    font-size: 22px; /* Subheading size */
-    text-align: center; /* Center subheadings */
-    margin: 10px 0; /* Space around subheadings */
+    font-size: 22px; 
+    text-align: center; 
+    margin: 10px 0; 
 }
 
 footer {
-    text-align: center; /* Center footer content */
-    margin-top: 20px; /* Space above footer */
+    text-align: center; 
+    margin-top: 20px; 
 }
 
 #topLinks, #bottomLinks {
-    text-align: center; /* Center navigation links */
+    text-align: center; 
 }
 
 #topLinks ul, #bottomLinks ul {
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove padding */
+    list-style: none; 
+    padding: 0; 
 }
 
 #topLinks li, #bottomLinks li {
-    display: inline; /* Display list items in line */
-    margin: 0 15px; /* Space between links */
+    display: inline; 
+    margin: 0 15px; 
 }
 
 #topLinks a, #bottomLinks a {
-    text-decoration: none; /* Remove underline */
-    color: #4CAF50; /* Link color */
+    text-decoration: none;
+    color: #4CAF50;
 }
 
 #topLinks a:hover, #bottomLinks a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
    

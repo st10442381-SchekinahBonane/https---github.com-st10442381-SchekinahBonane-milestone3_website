@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    
+   <script>
+        function calculateFees() {
+            const courseFee = 1500;
+            // Calculate total based on selected courses
+            let totalFee = 0;
+            const checkboxes = document.querySelectorAll('input[name="course"]:checked');
+            totalFee += checkboxes.length * courseFee;
+
+            document.getElementById("totalFee").innerText = "Total Fees: R" + totalFee;
+        }
+    </script>
+</head>
+<body>
+  <div id="container6">
+    <h1>Calculate Your Course Fees</h1>
+    
+    <h2>Select Courses:</h2>
+    <label><input type="checkbox" name="course" value="Course 1"> First Aid Course</label><br>
+    <label><input type="checkbox" name="course" value="Course 2"> Landscaping Course</label><br>
+    <label><input type="checkbox" name="course" value="Course 3"> Life Skills Course</label><br>
+    <label><input type="checkbox" name="course" value="Course 4"> Sewing Course</label><br>
+
+    <button onclick="calculateFees()">Calculate Fees</button>
+    <h2 id="totalFee"></h2>
+
+
+    <footer>
+        <nav id="bottomLinks">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sixWeekCourses.html">Six Week Courses</a></li>
+            <li><a href="sixMonthCoirses">Six Month Courses</a></li>
+            <li><a href="contact.html">Calculate Fees</a></li>
+          </ul>
+        </nav>
+      </footer>
+    <p>
+            &copy; Empowering The Nation 2024 | Powered by SSMART
+        </p>
+ </div>
+</body>
+</html>

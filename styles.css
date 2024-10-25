@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 27px;
+    
+}
+
+.header-container {
+    text-align: center; /* Center the header content */
+    margin-bottom: 20px;
+    
+}
+
+.logo{
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover; /* Ensure the image fits within the circle */
+}
+
+.header-title {
+    font-size: 24px; /* Change font size */
+    font-weight: bold; /* Make the title bold */
+    margin-top: 10px; /* Space between logo and title */
+}
+
+.dropdown {
+    text-align: left; /* Center the dropdown */
+    margin: 20px 0; /* Space above and below the dropdown */
+}
+
+.dropbtn {
+    padding: 10px 20px; /* Make the button bigger */
+    font-size: 16px; /* Increase font size for visibility */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute; /* Position it relative to the dropdown */
+    background-color: #ffffff; /* Background for the dropdown */
+    min-width: 200px; /* Minimum width for dropdown */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 1; /* Place it on top */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: black; /* Text color in dropdown */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links stack vertically */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+}
+
+#courses {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center the boxes */
+}
+
+#box {
+    background-color: #ffffff; /* Background for course boxes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside boxes */
+    margin: 10px 0; /* Space between boxes */
+    width: 100%; /* Make boxes full width */
+    max-width: auto; /* Max width for boxes */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for boxes */
+}
+.container {
+    max-width: auto; /* Set a larger width */
+    max-height: auto; /* Set a larger height */
+    margin: 20px auto; /* Center the box horizontally */
+    background-color: rgb(167, 193, 216);
+    border-radius: 35px;
+    display: flex; /* Optional: enables flexbox for centering content */
+    flex-direction: column; /* Optional: stack children vertically */
+    align-items: center; /* Optional: center children horizontally */
+    justify-content: center; /* Optional: center children vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
+}
+
+#box2 {
+    width: 1200;
+    height: 200;
+    background-color: rgb(167, 193, 216);
+    margin: 20px;
+    border-radius: 35px;
+    display: flex; /* Optional: enables flexbox for centering content */
+    flex-direction: column; /* Optional: stack children vertically */
+    align-items: center; /* Optional: center children horizontally */
+    justify-content: center; /* Optional: center children vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for depth */
+}
+.images2 {
+    width: 200;
+    height: 150;
+    border-radius: 35px;
+}
+.image3 { width: 200;
+    height: 150;
+    border-radius: 35px;
+
+}
+.image1 { width: 200;
+    height: 150;
+    border-radius: 35px;
+
+}
+
+h1 {
+    font-size: 28px; /* Heading size */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+h2 {
+    font-size: 22px; /* Subheading size */
+    text-align: center; /* Center subheadings */
+    margin: 10px 0; /* Space around subheadings */
+}
+
+footer {
+    text-align: center; /* Center footer content */
+    margin-top: 20px; /* Space above footer */
+}
+
+#topLinks, #bottomLinks {
+    text-align: center; /* Center navigation links */
+}
+
+#topLinks ul, #bottomLinks ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+#topLinks li, #bottomLinks li {
+    display: inline; /* Display list items in line */
+    margin: 0 15px; /* Space between links */
+}
+
+#topLinks a, #bottomLinks a {
+    text-decoration: none; /* Remove underline */
+    color: #4CAF50; /* Link color */
+}
+
+#topLinks a:hover, #bottomLinks a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

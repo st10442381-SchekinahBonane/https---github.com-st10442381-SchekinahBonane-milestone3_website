@@ -3,49 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    
-   <script>
-        function calculateFees() {
-            const courseFee = 1500;
-            // Calculate total based on selected courses
-            let totalFee = 0;
-            const checkboxes = document.querySelectorAll('input[name="course"]:checked');
-            totalFee += checkboxes.length * courseFee;
-
-            document.getElementById("totalFee").innerText = "Total Fees: R" + totalFee;
-        }
-    </script>
+    <title>Calculate Fees Page</title>
 </head>
 <body>
-  <div id="container6">
-    <h1>Calculate Your Course Fees</h1>
+    <div class="container">
+
+        <div class="header-container">
+          <img src="_images/LOGO Empowering nations.png" alt= "Logo" class="logo">
+          <div class="header-title">Empowering The Nations</div>
+        </div>
+
+        <header>
+            <nav id="topLinks">
+              <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
+			<li><a href="sixWeekCourses.html">Six Week Courses</a></li>
+			<li><a href="sixMonthCourses">Six Month Courses</a></li>
+			<li><a href="coursePage.html">Calculate Fees</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		  </ul>
+            </nav>
+        </header>
     
-    <h2>Select Courses:</h2>
-    <label><input type="checkbox" name="course" value="Course 1"> First Aid Course</label><br>
-    <label><input type="checkbox" name="course" value="Course 2"> Landscaping Course</label><br>
-    <label><input type="checkbox" name="course" value="Course 3"> Life Skills Course</label><br>
-    <label><input type="checkbox" name="course" value="Course 4"> Sewing Course</label><br>
+       <h1>Course Fees Estimation</h1>
+    
+        
+        <div id="courseForm">
 
-    <button onclick="calculateFees()">Calculate Fees</button>
-    <h2 id="totalFee"></h2>
+            <h2>Select Your Courses</h2>
+            <label><input type="checkbox" name="course" value="course 1" data-price="1500" > First Aid - R1500</label><br>
+            <label><input type="checkbox" name="course" value="course 2" data-price="1500" > Sewing - R1500</label><br>
+            <label><input type="checkbox" name="course" value="course 3" data-price="1500"> Land Scapping - R1500</label><br>
+            <label><input type="checkbox" name="course" value="course 4" data-price="1500" > Life Skills - R1500</label><br>
+            <label><input type="checkbox" name="course" value="course 5" data-price="750"> Child Minding  - R750</label><br>
+            <label><input type="checkbox" name="course" value="course 6" data-price="750"> Cooking - R750</label><br>
+            <label><input type="checkbox" name="course" value="course 7" data-price="750"> Garden Maintenence - R750</label><br>
+           
+            <button type="button" onclick="calculateTotal()">Estimate Fees</button>
+        </div>
 
-
+        
+        <div id="result" class="invoice">
+            <h2>Invoice</h2>
+            <p id="selectedCourses">Selected Courses: </p>
+            <p id="totalAmount">Total: R0</p>
+            <p id="vat">VAT (15%): R0</p>
+            <p id="finalAmount">Final Amount (Including VAT): R0</p>
+        </div>
+    </div>
+ 
+    <script>
+           function calculateTotal() {
+               let total = 0;
+               let selectedCourses = [];
+               let checkboxes = document.querySelectorAll('input[name="course"]:checked');
+               
+               checkboxes.forEach((checkbox) => {
+                   total += parseFloat(checkbox.getAttribute('data-price'));
+                   selectedCourses.push(checkbox.value);
+               });
+   
+               let vat = total * 0.15;
+               let finalAmount = total + vat;
+   
+               // Display selected courses and fees
+               document.getElementById('selectedCourses').textContent = 'Selected Courses: ' + selectedCourses.join(', ');
+               document.getElementById('totalAmount').textContent = 'Total: R' + total.toFixed(2);
+               document.getElementById('vat').textContent = 'VAT (15%): R' + vat.toFixed(2);
+               document.getElementById('finalAmount').textContent = 'Final Amount (Including VAT): R' + finalAmount.toFixed(2);
+           }
+       </script>
+       
     <footer>
-        <nav id="bottomLinks">
-          <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="summary.six.weeks.html">Six Week Courses</a></li>
-            <li><a href="summary.six.months.html">Six Month Courses</a></li>
-            <li><a href="calculatefees.html">Calculate Fees</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </footer>
+		<nav id="bottomLinks">
+		  <ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="sixWeekCourses.html">Six Week Courses</a></li>
+			<li><a href="sixMonthCoirses">Six Month Courses</a></li>
+			<li><a href="coursePage.html">Calculate Fees</a></li>
+			<li><a href="contactUs.html">Contact Us</a></li>
+		  </ul>
+		</nav>
+	  </footer>
     <p>
-            &copy; Empowering The Nation 2024 | Powered by SSMART
-        </p>
- </div>
+			&copy; Empowering The Nation 2024 | Powered by SSMART
+		</p>
 </body>
 </html>

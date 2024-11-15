@@ -60,6 +60,7 @@ h2{
     
 }
 
+
 #container2{
     border-radius: 8px;
     background-color: #ffffff;
@@ -344,7 +345,7 @@ body {
     max-width: auto; 
     max-height: auto; 
     margin: 20px auto; 
-    background-color: rgb(167, 193, 216);
+    background-color: rgb(255, 255, 255);
     border-radius: 35px;
     display: flex; 
     flex-direction: column; 
@@ -356,7 +357,7 @@ body {
 #box2 {
     width: 1200;
     height: 200;
-    background-color: rgb(167, 193, 216);
+    background-color: rgb(255, 255, 255);
     margin: 20px;
     border-radius: 35px;
     display: flex; 
